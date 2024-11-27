@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetch pagination challenge solution</title>
+
+    <style>
+      @font-face {
+        font-family: "MaPolicePersonnalisee";
+        /* Nom de la police à utiliser dans CSS */
+        src: url("fonts/ma-police.woff2") format("woff2"),
+          /* Format moderne */ url("fonts/ma-police.woff") format("woff");
+        /* Format plus ancien (fallback) */
+        font-weight: normal;
+        /* Facultatif : poids normal */
+        font-style: normal;
+        /* Facultatif : style normal */
+      }
+
+      body {
+        font-family: "MaPolicePersonnalisee", Arial, sans-serif;
+      }
+
+      .box {
+        display: flex;
+        gap: 5px; /* Espace entre les box*/
+        margin: 20px auto;
+        justify-content: space-around;
+
+        /* white-space: nowrap; */
+      }
+
+      .first,
+      .second,
+      .third,
+      .fourth,
+      .five {
+        border: 1px solid salmon;
+        width: 150px;
+        height: 150px;
+        display: block;
+        text-align: center;
+        line-height: 150px; /* centre mon texte par rapport a la div parente */
+
+        /* display: inline-block; Positionne les éléments en ligne */
+        /* margin-right: 10px; Espacement entre les éléments */
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      /* #previous,
+      #next {
+        border: none;
+        border-radius: 5px;
+        width: 80px;
+        height: 35px;
+        font-weight: bold;
+        background-color: hsl(275, 50%, 49%);
+        color: beige;
+        text-transform: uppercase; Convertit le texte en majuscules
+        cursor: pointer; Change le curseur pour indiquer un clic possible
+      } */
+
+      button {
+        margin: 10px;
+        /* Applique une marge de 10px tout autour */
+        border: none;
+        border-radius: 5px;
+        width: 80px;
+        height: 35px;
+        font-weight: bold;
+        background-color: hsl(275, 50%, 49%);
+        color: beige;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      button:hover {
+        box-shadow: 0 10px 10px 0 rgb(205, 205, 205);
+      }
+
+      @media only screen and (max-width: 600px) {
+        .box {
+          display: block;
+          gap: 5px;
+          margin: 20px auto;
+          justify-content: space-around;
+
+          /* white-space: nowrap; */
+        }
+
+        .first,
+        .second,
+        .third,
+        .fourth,
+        .five {
+          border: 1px solid salmon;
+          width: 150px;
+          height: 150px;
+          display: block;
+          text-align: center;
+          line-height: 150px; /* centre mon texte par rapport a la div parente */
+          margin-bottom: 10px; 
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <h1>Pagination Challenge</h1>
+      </div>
+      <div class="box">
+        <div class="first">150 X 150</div>
+        <div class="second">150 X 150</div>
+        <div class="third">150 X 150</div>
+        <div class="fourth">150 X 150</div>
+        <div class="five">150 X 150</div>
+      </div>
+      <div class="button-container">
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+      </div>
+
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet autem
+          corporis accusantium voluptate commodi, id consequatur est, officiis
+          natus inventore vitae, blanditiis alias eaque illum tempora officia
+          nostrum obcaecati quia?
+        </p>
+      </div>
+    </div>
+
+    <script src="pagination.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rotating Circle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Fredoka One", cursive;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      #circle {
+        /* display: flex;
+        height: 250px;
+        width: 250px;
+        border-radius: 180px;
+        background-image: linear-gradient(180deg, salmon, orange); */
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
+        /* background: linear-gradient(0.5turn, red, orange, yellow, green, blue, purple); */
+        border-radius: 50%;
+        margin: 20px auto;
+      }
+
+      .slider {
+        width: 100%;
+        max-width: 300px;
+        display: block; /* Propriete pour centrer */
+        margin: 10px auto; /* Propriete pour centrer */
+      }
+
+      .btn {
+        /* padding: 15px; */
+        border: none;
+        width: 100px;
+        height: 30px;
+        margin: 10px auto; /* Propriete pour centrer */
+        display: block; /* Propriete pour centrer */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rotating Circle</h1>
+
+    <div class="circle" id="circle"></div>
+
+    <input
+      class="slider"
+      step="1"
+      min="0"
+      value="0"
+      max="10000"
+      type="range"
+      id="slider"
+    />
+
+    <h2>Auto pilot</h2>
+    <button class="btn" id="auto-pilot">Start</button>
+    <h2>Resources</h2>
+
+    <ul>
+      <li><a href="">Linear Gradients</a></li>
+    </ul>
+
+    <script src="circle.js"></script>
+  </body>
+</html>

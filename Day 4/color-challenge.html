@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Challenge</title>
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      div.input{
+        flex: 1;
+      }
+
+      label,input{
+        display: block;
+        width: 90%;
+      }
+
+      #color{
+        width: 300px;
+        height: 300px;
+        border: black dashed 5px;
+        margin: 20px auto;
+      }
+
+      h1{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="text">Color Div Challenge</h1>
+
+
+
+    <div class="container">
+      <div class="input">
+        <label for="red">Red</label>
+        <input type="range" name="" value="0" min="0" max="255" id="red" />
+        <span id="redValue">#00</span>
+      </div>
+
+      <div class="input">
+        <label for="green">Green</label>
+        <input type="range" name="" value="0" min="0" max="255" id="green" />
+        <span id="greenValue">#00</span>
+      </div>
+
+      <div class="input">
+        <label for="blue">Blue</label>
+        <input type="range" name="" value="250" min="0" max="255" id="blue" />
+        <span id="blueValue">#00</span>
+      </div>
+    </div>
+
+    <div id="color"></div>
+
+    <pre>
+        * Create a color picker
+        * Attach event listeners to the sliders so that when a slider's value
+    </pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>

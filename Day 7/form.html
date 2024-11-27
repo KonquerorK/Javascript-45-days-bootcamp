@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form Challenge</title>
+
+        <!-- Google Fonts -->
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+      />
+  
+      <!-- CSS Reset -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      />
+  
+      <!-- Milligram CSS -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+      />
+  
+      <!-- You should properly set the path from the main file. -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>Contact Form Challenge</h1>
+        </div>
+      </div>
+      <div id="success-message" style="display: none" class="row">
+        <div class="col">
+          <h2>Your contact was delivered</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="email">Email</label>
+          <input type="email" placeholder="kqr@gmail.com" id="email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="message">Message</label>
+          <textarea placeholder="Say hi" id="message"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <button class="button float-right">Submit</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>
+            When someone clicks the button submit the email and message to a
+            <a href="https://requestbin.com/">request bin</a> url.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

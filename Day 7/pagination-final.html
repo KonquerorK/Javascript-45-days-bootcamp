@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pagination Challenge</title>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>Pagination Challenge</h1>
+        </div>
+      </div>
+      <div id="image-container" class="row">
+        <div class="column">
+          <img
+            id="image-1"
+            src="https://via.placeholder.com/150/92c952"
+            alt=""
+          />
+        </div>
+        <div class="column">
+          <img
+            id="image-2"
+            src="https://via.placeholder.com/150/92c952"
+            alt=""
+          />
+        </div>
+        <div class="column">
+          <img
+            id="image-3"
+            src="https://via.placeholder.com/150/92c952"
+            alt=""
+          />
+        </div>
+        <div class="column">
+          <img
+            id="image-4"
+            src="https://via.placeholder.com/150/92c952"
+            alt=""
+          />
+        </div>
+        <div class="column">
+          <img
+            id="image-5"
+            src="https://via.placeholder.com/150/92c952"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <button id="previous" class="button">Previous</button>
+        </div>
+        <div class="column">
+          <button id="next" class="button float-right">Next</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>
+            Implement pagination using json placeholder api. Use this url to get
+            started:
+            https://jsonplaceholder.typicode.com/photos?_start=0&_limit=5.
+            _start controls where it starts in the pagination. The limit
+            controls how many to display. So if you wanted to go the next page
+            you _start=5 because it would start at 5. Make sure that start next
+            goes below zero. I have scoped out the basic html for you and added
+            ids to all the image tags. Give this your best shot!!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="pagination.js"></script>
+  </body>
+</html>

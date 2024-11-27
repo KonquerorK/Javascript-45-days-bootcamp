@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text{
+            border: 10px dotted red;
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+        }
+        .text> p{
+            font-size: large;
+            font-weight: bold;
+        }
+        strong{
+            text-decoration: line-through;
+        }
+        #dadjoke{
+            width: 80%;
+            border: dotted red 10px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Dad Joke</h1>
+
+    <button id="btn">Get <strong>Bed</strong> Dad joke</button>
+   <h2 id="dadjoke">Loading Joke</h2>
+    <!-- <div class="text">
+        <p>What did the mountain climber name his son? Cliff.</p>
+    </div> -->
+
+    <script src="fetch-with-async-await.js"></script>
+</body>
+</html>
