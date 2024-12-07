@@ -1,0 +1,27 @@
+[
+    {
+        "username": "Nick",
+        "email": "nick@gmail.com",
+        "password": "secret"
+    },
+    {
+        "username": "Yann",
+        "email": "yann@gmail.com",
+        "password": "dasdasd"
+    },
+    {
+        "username": "Ade",
+        "email": "ade@gmail.com",
+        "password": "asdasd"
+    },
+    {
+        "username": "drake",
+        "email": "drake@gmail.com",
+        "password": "asdasd"
+    },
+    {
+        "username": "Konqueror",
+        "email": "Konqueror@gmail.com",
+        "password": "secret-kqr"
+    }
+]
