@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Ayu Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+
+
+    },
+    "workbench.sideBar.location": "left",
+    "workbench.preferredHighContrastColorTheme": "Ayu Dark",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace"
+}
